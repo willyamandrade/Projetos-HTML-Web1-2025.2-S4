@@ -10,5 +10,39 @@
 
     <body>
         <h2>Formulário de Cadastro</h2>
+        <form action="/enviar_dados" method="post">
+
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" name="nome" id="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label for="senha">Senha:</label><br>
+            <input type="password" name="senha" id="senha" required><br><br>
+
+            <label for="genero">Gênero:</label><br>
+            <select name="genero" id="genero">
+                <option value="masc">Masculino</option>
+                <option value="fem">Feminino</option>
+                <option value="nbin">Não-binário</option>
+                <option value="outro">Outro</option>
+                <option value="naoresp">Prefiro não responder</option>
+            </select><br><br>
+
+            <label for="interesses">Interesses:</label><br>
+            <input type="checkbox" id="programacao" name="programacao">
+            <label for="programacao">Programação</label><br>
+            <input type="checkbox" id="design" name="design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="musica" name="musica">
+            <label for="musica">Música</label><br><br>
+
+            <label for="biografia">Biografia:</label><br>
+            <textarea id="biografia" name="biografia" rows="3" cols="48"></textarea><br><br>
+            
+            <input type="submit" id="Enviar">
+            
+        </form>
     </body>
 </html>
